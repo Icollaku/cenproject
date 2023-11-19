@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shop</title>
+    <link rel="stylesheet" href="styles/home.css">
+</head>
+<body class="home">
+    <script src="script/script.js"></script>
+
+            <div class="header">
+                <a href="home.html">
+            <img src="styles/photos/images.jpg" width="150px"
+                    
+            height="100px">
+        </a>
+            <form action="">
+                <input type="text" class="searchTerm" id="searchInput" placeholder="Search by name" oninput="searchProducts()">
+            </form>
+            <a href="cart.html">
+                <img alt="logo" src="styles/photos/shopping-cart-logo-or-icon-design-vector.jpg" width="100" height="100">
+                </a>
+            
+                <button class="logout" onclick="logout()">Logout</button>
+            </div>
+            <div id="products">
+                <!-- Products -->
+            </div>
+    <script>
+        checkAuth();
+        displayProducts();
+    </script>
+</body>
+</html>

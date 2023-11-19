@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="styles/cart.css">
+</head>
+<body>
+    <script src="script/script.js"></script>
+    <div class="container">
+        <div class="header">
+            <h2>Cart</h2>
+            
+        </div>
+        <div id="cart-items">
+            <!-- Cart items -->
+        </div>
+        <button onclick="checkout()">Checkout</button>
+        <a href="home.html">Back to Home</a>
+    </div>
+    <script>
+        // Check if the user is authenticated before allowing access to the cart page
+        checkAuth();
+        // Display cart items on the cart page
+        displayCartItems();
+    </script>
+</body>
+</html>
